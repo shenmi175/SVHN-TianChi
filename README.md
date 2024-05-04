@@ -16,7 +16,7 @@
 
 ### 快速创建环境
 
-进入environment.yaml文件所在的文件夹，使用以下命令创建环境并安装所需库：
+进入environment.yml文件所在的文件夹，使用以下命令创建环境并安装所需库：
 
 ```python
 conda env create -f environment.yml
@@ -44,6 +44,8 @@ model = YOLO('path/to/best.pt')  # 加载自定义训练模型
 model.export(format='coreml',nms=True)
 ```
 4. 识别按照边框位置进行排序
+5. 考虑进行投票融合
+
 输出处理十分重要，这在很大程度上决定了最终分数。更多方法请参考竞赛论坛。
 
 ### 数据增强

@@ -3,6 +3,7 @@
 本项目参考了其他选手的一些处理技巧，使用yolov8框架进行训练。截至2024年4月29日，分数为0.9477，排名5/7496
 
 参考资料：
+
 [动手学CV-Pytorch](https://datawhalechina.github.io/dive-into-cv-pytorch/#/?id=dive-into-cv-pytorch)
 
 [YOLOV8官方文档](https://docs.ultralytics.com/)

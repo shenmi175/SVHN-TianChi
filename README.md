@@ -36,15 +36,8 @@ conda env create -f environment.yml
 
 ## 输出处理
 1. iou=0.5，置信度=0.001
-2. 使用官方框架添加全局nms，例如：
-```python
-from ultralytics import YOLO
-model = YOLO('path/to/best.pt')  # 加载自定义训练模型
-# 导出模型
-model.export(format='coreml',nms=True)
-```
-4. 识别按照边框位置进行排序
-5. 考虑进行投票融合
+2. 识别按照边框位置进行排序
+3. 考虑进行投票融合
 
 输出处理十分重要，这在很大程度上决定了最终分数。更多方法请参考竞赛论坛。
 
